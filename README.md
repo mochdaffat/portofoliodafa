@@ -80,9 +80,10 @@ Pada [index.html](index.html) bagian `.avatar-placeholder`:
 </div>
 ```
 
-### 4. Mengubah Nomor WhatsApp & Email
-- Ganti semua teks `daffa@example.com` dengan alamat email Anda yang sebenarnya.
-- Ganti `6281234567890` pada tautan `https://wa.me/6281234567890` dengan nomor WhatsApp Anda (diawali dengan kode negara tanpa tanda `+`, contoh untuk Indonesia: `6281xxxxxxxx`).
+### 4. Mengubah Nomor WhatsApp, Email & Media Sosial
+- Email saat ini diatur ke `daffa@example.com` (silakan ubah jika ada email pribadi Anda).
+- WhatsApp sudah diatur ke nomor Anda: `628122047831`.
+- Instagram sudah diatur ke profil Anda: `https://instagram.com/mochdaffat_` (`@mochdaffat_`).
 
 ### 5. Menghubungkan Berkas CV (PDF)
 1. Letakkan berkas CV Anda (misal `cv-saya.pdf`) ke dalam folder proyek ini.
