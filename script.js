@@ -527,10 +527,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const downloadCvBtn = document.getElementById("download-cv");
   if (downloadCvBtn) {
-    downloadCvBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      alert("Fitur Unduh CV: Anda dapat menaruh file 'cv-daffa.pdf' ke dalam folder proyek dan mengganti atribut href pada tombol ini.");
-    });
+    const cvHref = downloadCvBtn.getAttribute("href");
+    // Hanya tampilkan peringatan simulasi jika href kosong atau masih berupa anchor '#'
+    if (!cvHref || cvHref === "#" || cvHref === "#resume") {
+      downloadCvBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        alert("Fitur Unduh CV: Anda dapat menaruh file 'cv-daffa.pdf' ke dalam folder proyek dan mengganti atribut href pada tombol ini.");
+      });
+    }
   }
 });
 
